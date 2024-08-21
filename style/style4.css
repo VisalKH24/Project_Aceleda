@@ -1,0 +1,38 @@
+.container > main > {
+  width: 100%;
+  height: 200vh;
+  background-color: var(--body-color);
+  z-index: -1;
+}
+.container > main > .banner {
+  width: 100%;
+  height: 415px;
+  padding: var(--padd);
+  background-color: #18283c;
+  box-shadow: 0 2px 4px black;
+  position: relative;
+}
+.container > main > .banner > .img {
+  width: 100%;
+  height: 100%;
+  animation: imageRander 10s linear infinite;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes imageRander {
+  0% {
+    background-image: url(/assets/image/Banner_acleda.jpg);
+    background-size: cover;
+  }
+  40% {
+    background-image: url(/assets/image/Banner_acleda_app.jpg);
+    background-size: cover;
+  }
+  70% {
+    background-image: url(/assets/image/Banner_acleda_scan.jpg);
+    background-size: cover;
+  }
+  100% {
+    background-image: url(/assets/image/Banner_acleda.jpg);
+    background-size: cover;
+  }
+}
